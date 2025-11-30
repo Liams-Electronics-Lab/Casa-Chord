@@ -17,6 +17,8 @@ CasChord is a Windows based audio routing software, designed to act as a whole h
 
 This application is compatible with any audio input or output that is normally visible to the windows sound manager, this includes virtual sound cards and mulitple identical audio devices.
 
+Input and output sample rates are syncronised using R8brain https://github.com/avaneev/r8brain-free-src
+
 ## Basic Overview
 
 The number of input sources and output zones is only limited to what Windows supports.
@@ -94,6 +96,10 @@ ____
 
 The **Web Gui** has the following features:
 
+</div>
+
+<div align="left"> 
+
 **Main Page:**  
 
 
@@ -123,6 +129,7 @@ The **Web Gui admin page** has the following features:
 - Buffer Size: This is the latancy added to the output stream, increase the number for slow systems, helps reduce stutter on slow machines.
 - Always Adjust Input Volume: This, when enabled, will always set the input volume to 100%.
 - Individual Output Delay: This is used to add latancy to outputs induvidually, useful for situations where you may have a usb audio device and a bluetooth audio device as grouped audio output zones. Adding latancy to sync up the sound.
+- Web Interface: Accidental touch rejection does what it says... Simplify input selector, this cleans up the input selector options to only show simple options, this is good for inexperienced users..
 - Device Aliases: This is where you can set custom names, like Record Player for an input, or Lounge Room for an output device.
 - Theme Selection: Custom themes are stored with the WinGUI app in XML format, because the webserver has client fingerprinting, you can set custom themes per client device. You can also save basic custom themes here.
 - Customize Colors: This overrides the custom theme settings when you click apply all, you can make a simple theme within the web gui this way..
@@ -130,3 +137,6 @@ The **Web Gui admin page** has the following features:
 
 
 ____
+
+
+To use this software, you must first agree to the ELUA, included with the application..
