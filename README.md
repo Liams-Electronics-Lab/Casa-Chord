@@ -13,7 +13,7 @@ Multizone Audio router for windows with local API (Whole House Audio system)
 
 <div align="center">
 
-CasChord is a Windows based audio routing software, designed to act as a whole home audio system using the cheapest hardware possible.
+CasaChord is a Windows based audio routing software, designed to act as a whole home audio system using the cheapest hardware possible.
 
 This application is compatible with any audio input or output that is normally visible to the windows sound manager, this includes virtual sound cards and mulitple identical audio devices.
 
@@ -53,7 +53,7 @@ The **Windows Gui** has the following features:
 **Main Page:**  
     
 - Input Device Selection: This is the audio source device, if it has a custom name set, that is what you will see..  
-- Adjust Input Volume: This chnages the input volume for the source, using windows volume control api. Really it should always be set to 100% (set "always adjust input volume" in advanced, to true)
+- Adjust Input Volume: This changes the input volume for the source, using windows volume control api. Really it should always be set to 100% (set "always adjust input volume" in advanced, to true)
 - Output Devices: Select all will enable all outputs...
 - Output Devices cont..: These are your audio destinations, a.k.a your output zones. Each one is a distinct audio output device, you can select one or all at once, if a custom name is set, that is what you'll see.
 - Master Volume: You can set individual zone volumes 0~100%, adjusting the Master Volume will snap all outputs to that setting.
@@ -105,7 +105,7 @@ The **Web Gui** has the following features:
 
 - Master Volume + MUTE : Adjusting the Master Volume will snap all outputs to that setting. MUTE will set the volume to 5% and lock the master volume slider..  
 - Input Device Selection: This is the audio source device, if it has a custom name set, that is what you will see..  
-- Adjust Input Volume: This chnages the input volume for the source, same as the windows app works, because thats whats doing the real work. Really it should always be set to 100% (set "always adjust input volume" in advanced, to true)
+- Adjust Input Volume: This changes the input volume for the source, same as the windows app works, because thats whats doing the real work. Really it should always be set to 100% (set "always adjust input volume" in advanced, to true)
 - Output Devices: You can set individual zone volumes 0~100%, These are your audio destinations, a.k.a your output zones. Each one is a distinct audio output device, you can select one or all at once. If a custom name is set, that is what you'll see.
 - Start routing, stop routing, refresh: Unlike the Windows GUI, you can add and remove output zones on the fly. Each time you do, routing is quickly stopped and restarted automagically .. Refresh resets the interface selectors and stops routing.
 
