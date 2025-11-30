@@ -1,0 +1,316 @@
+CASA CHORD - API DOCUMENTATION
+=====================================
+
+This document describes the available API methods for programmatic control
+of the Casa Chord application.
+
+NOTE: This documentation is auto-generated. 
+
+
+========================================
+DEVICE MANAGEMENT
+========================================
+
+API_GetInputDevices()
+  Description: Retrieves list of available input audio devices
+  Parameters: None
+  Returns: vector<AudioDevice> containing device ID, friendly name, and state
+
+API_GetOutputDevices()
+  Description: Retrieves list of available output audio devices
+  Parameters: None
+  Returns: vector<AudioDevice> containing device ID, friendly name, and state
+
+API_GetSelectedInput()
+  Description: Gets the currently selected input device ID
+  Parameters: None
+  Returns: wstring - Device ID, or empty string if none selected
+
+API_GetSelectedOutputs()
+  Description: Gets list of currently enabled output device IDs
+  Parameters: None
+  Returns: vector<wstring> - List of enabled output device IDs
+
+API_SetOutputEnabled(deviceId, enabled)
+  Description: Enables or disables a specific output device
+  Parameters:
+    - deviceId (wstring): Device identifier
+    - enabled (bool): true to enable, false to disable
+  Returns: void
+
+API_SelectAllOutputs()
+  Description: Enables all available output devices
+  Parameters: None
+  Returns: void
+
+API_DeselectAllOutputs()
+  Description: Disables all output devices
+  Parameters: None
+  Returns: void
+
+API_RefreshDevices()
+  Description: Refreshes the list of available audio devices
+  Parameters: None
+  Returns: void
+
+========================================
+AUDIO ROUTING
+========================================
+
+API_StartRouting(inputDeviceId, outputDeviceIds)
+  Description: Starts audio routing from the specified input to the specified outputs
+  Parameters:
+    - inputDeviceId (wstring): Input device identifier
+    - outputDeviceIds (vector<wstring>): List of output device identifiers
+  Returns: bool - true if routing started successfully, false otherwise
+
+API_StopRouting()
+  Description: Stops all active audio routing
+  Parameters: None
+  Returns: void
+
+API_IsRouting()
+  Description: Checks if audio routing is currently active
+  Parameters: None
+  Returns: bool - true if routing is active, false otherwise
+
+========================================
+VOLUME CONTROL
+========================================
+
+API_SetMasterVolume(volumePercent)
+  Description: Sets the master volume level for all outputs
+  Parameters:
+    - volumePercent (int): Volume level 0-100
+  Returns: void
+
+API_GetMasterVolume()
+  Description: Gets the current master volume level
+  Parameters: None
+  Returns: int - Volume level 0-100
+
+API_SetOutputVolume(deviceId, volumePercent)
+  Description: Sets the volume level for a specific output device
+  Parameters:
+    - deviceId (wstring): Device identifier
+    - volumePercent (int): Volume level 0-100
+  Returns: void
+
+API_GetOutputVolume(deviceId)
+  Description: Gets the volume level for a specific output device
+  Parameters:
+    - deviceId (wstring): Device identifier
+  Returns: int - Volume level 0-100, or 0 if device not found
+
+API_SetInputVolume(volumePercent)
+  Description: Sets the input volume level
+  Parameters:
+    - volumePercent (int): Volume level 0-100
+  Returns: void
+
+API_SetInputVolumeEnabled(enabled)
+  Description: Enables or disables input volume adjustment
+  Parameters:
+    - enabled (bool): true to enable, false to disable
+  Returns: void
+
+API_GetInputVolumeEnabled()
+  Description: Gets the current input volume adjustment state
+  Parameters: None
+  Returns: bool - true if enabled, false otherwise
+
+API_SetAlwaysAdjustInputVolume(enabled)
+  Description: Enables or disables automatic input volume maximization
+  Parameters:
+    - enabled (bool): true to enable, false to disable
+  Returns: void
+
+API_GetAlwaysAdjustInputVolume()
+  Description: Gets the current automatic input volume adjustment state
+  Parameters: None
+  Returns: bool - true if enabled, false otherwise
+
+========================================
+ADVANCED SETTINGS
+========================================
+
+API_SetLowLatencyMode(enabled)
+  Description: Enables or disables low latency mode
+  Parameters:
+    - enabled (bool): true to enable, false to disable
+  Returns: void
+
+API_GetLowLatencyMode()
+  Description: Gets the current low latency mode state
+  Parameters: None
+  Returns: bool - true if enabled, false otherwise
+
+API_SetBufferSize(bufferMs)
+  Description: Sets the audio buffer size in milliseconds
+  Parameters:
+    - bufferMs (int): Buffer size in milliseconds (1-10000)
+  Returns: void
+
+API_GetBufferSize()
+  Description: Gets the current audio buffer size
+  Parameters: None
+  Returns: int - Buffer size in milliseconds
+
+API_SetOutputDrift(deviceId, driftMs)
+  Description: Sets the drift/delay compensation for a specific output device
+  Parameters:
+    - deviceId (wstring): Device identifier
+    - driftMs (int): Drift in milliseconds (-10000 to +10000)
+  Returns: void
+
+========================================
+DEVICE NAMING
+========================================
+
+API_SetDeviceName(deviceId, customName)
+  Description: Sets a custom display name for a device
+  Parameters:
+    - deviceId (wstring): Device identifier
+    - customName (wstring): Custom name to display
+  Returns: void
+
+API_ClearDeviceName(deviceId)
+  Description: Removes the custom name for a device, reverting to original name
+  Parameters:
+    - deviceId (wstring): Device identifier
+  Returns: void
+
+API_SetDeviceHidden(deviceId, hidden, isInput)
+  Description: Hides or shows a device in the web UI main page
+  Parameters:
+    - deviceId (wstring): Device identifier
+    - hidden (bool): true to hide, false to show
+    - isInput (bool): true for input device, false for output device
+  Returns: void
+  Note: This setting only affects the web UI, not the Windows GUI
+
+API_GetDeviceHidden(deviceId, isInput)
+  Description: Checks if a device is hidden in the web UI
+  Parameters:
+    - deviceId (wstring): Device identifier
+    - isInput (bool): true for input device, false for output device
+  Returns: bool - true if hidden, false if visible
+
+========================================
+WEB SERVER CONTROL
+========================================
+
+API_StartWebServer()
+  Description: Starts the web server with current settings
+  Parameters: None
+  Returns: bool - true if server started successfully, false otherwise
+
+API_StopWebServer()
+  Description: Stops the web server if running
+  Parameters: None
+  Returns: bool - true if server stopped successfully, false otherwise
+
+API_IsWebServerRunning()
+  Description: Checks if the web server is currently running
+  Parameters: None
+  Returns: bool - true if running, false otherwise
+
+API_GetWebServerURL()
+  Description: Gets the full URL of the running web server
+  Parameters: None
+  Returns: wstring - Full URL (e.g., http://192.168.1.100:8080/), or empty if not running
+
+API_GetWebServerPort()
+  Description: Gets the configured web server port
+  Parameters: None
+  Returns: int - Port number
+
+API_SetWebServerEnabled(enabled)
+  Description: Enables or disables the web server feature
+  Parameters:
+    - enabled (bool): true to enable, false to disable
+  Returns: void
+
+API_SetWebServerStartWithApp(enabled)
+  Description: Enables or disables automatic web server start on application launch
+  Parameters:
+    - enabled (bool): true to enable, false to disable
+  Returns: void
+
+API_SetWebServerPort(port)
+  Description: Sets the web server port number
+  Parameters:
+    - port (int): Port number (1-65535)
+  Returns: void
+
+API_SetWebServerMdnsEnabled(enabled)
+  Description: Enables or disables mDNS service discovery
+  Parameters:
+    - enabled (bool): true to enable, false to disable
+  Returns: void
+
+API_SetWebServerMdnsUrl(url)
+  Description: Sets the mDNS service name (without .local suffix)
+  Parameters:
+    - url (wstring): Service name (e.g., casachord)
+  Returns: void
+
+========================================
+USAGE EXAMPLES
+========================================
+
+Example 1: Start routing from default input to two outputs
+  auto inputs = API_GetInputDevices();
+  auto outputs = API_GetOutputDevices();
+  if (!inputs.empty() && outputs.size() >= 2) {
+    std::vector<std::wstring> selectedOutputs = {outputs[0].id, outputs[1].id};
+    API_StartRouting(inputs[0].id, selectedOutputs);
+  }
+
+Example 2: Set master volume to 50% and specific output to 75%
+  API_SetMasterVolume(50);
+  auto outputs = API_GetOutputDevices();
+  if (!outputs.empty()) {
+    API_SetOutputVolume(outputs[0].id, 75);
+  }
+
+Example 3: Start web server and get URL
+  if (API_StartWebServer()) {
+    std::wstring url = API_GetWebServerURL();
+    wprintf(L"Server running at: %s\n", url.c_str());
+  }
+
+Example 4: Configure low latency mode with custom buffer
+  API_SetLowLatencyMode(true);
+  API_SetBufferSize(50);
+
+Example 5: Set custom device names
+  auto outputs = API_GetOutputDevices();
+  if (outputs.size() >= 2) {
+    API_SetDeviceName(outputs[0].id, L"Living Room");
+    API_SetDeviceName(outputs[1].id, L"Bedroom");
+  }
+
+========================================
+NOTES
+========================================
+
+- Device IDs are persistent Windows identifiers in the format:
+  {0.0.0.00000000}.{GUID}
+
+- Volume levels are always specified as percentages (0-100)
+
+- Settings changes (volume, buffer size, etc.) are automatically saved
+  to userset.ini and persist across application restarts
+
+- Custom device names persist in userset.ini and are displayed in the UI
+
+- Low latency mode reduces buffer sizes for minimal delay but may increase
+  CPU usage and potential for audio glitches on slower systems
+
+- Drift compensation allows fine-tuning synchronization between outputs
+  by adding positive (delay) or negative (advance) timing adjustments
+
+- Web server provides HTTP access for remote control. mDNS allows
+  discovery via friendly names like http://casachord.local:8080/
+

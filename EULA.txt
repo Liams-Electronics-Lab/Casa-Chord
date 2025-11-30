@@ -1,0 +1,71 @@
+END USER LICENSE AGREEMENT
+Casa Chord — Multi‑Zone Audio Router
+
+Copyright 2025 Liam's Electronics Lab. All Rights Reserved.
+
+IMPORTANT READ CAREFULLY This End User License Agreement EULA is a legal agreement between you either an individual or a single entity and Liam's Electronics Lab for the Casa Chord software product which includes computer software and may include associated media printed materials and online or electronic documentation SOFTWARE. By installing copying or otherwise using the SOFTWARE you agree to be bound by the terms of this EULA. If you do not agree do not install or use the SOFTWARE.
+
+1. Grant of License
+License Grant Liam's Electronics Lab grants you a personal non‑exclusive non‑transferable license to install and use one copy of the SOFTWARE on a single device or instance. You may make one archival backup copy solely for archival or disaster recovery purposes. All rights not expressly granted are reserved by Liam's Electronics Lab.
+
+Permitted Use You may use the SOFTWARE for your internal business or personal purposes subject to the restrictions in this EULA.
+
+2. Restrictions
+You may not:
+
+Modify adapt translate reverse engineer decompile or disassemble the SOFTWARE except to the extent such restriction is prohibited by applicable law.
+
+Rent lease loan sublicense or distribute the SOFTWARE or any portion of it.
+
+Remove or alter any copyright trademark or other proprietary notices.
+
+Use the SOFTWARE for illegal purposes or to violate applicable laws or regulations.
+
+3. Proprietary Rights
+The SOFTWARE is proprietary and confidential. Liam's Electronics Lab retains all right title and interest in and to the SOFTWARE including all copyrights patents trade secrets trademarks and other intellectual property rights. No ownership rights are transferred to you under this EULA.
+
+4. Third Party Components and Notices
+Third Party Components The SOFTWARE incorporates third party components that are licensed under their own terms. The R8Brain sample rate conversion library is included under the MIT License. The full R8Brain MIT License text is included below and in the THIRD‑PARTY‑NOTICES file distributed with the SOFTWARE.
+
+Third Party Notices A THIRD‑PARTY‑NOTICES file listing all third party components and their licenses is included with the distribution and accessible from the About screen or installation directory. You must retain the copyright and license notices for third party components when redistributing those components in accordance with their licenses.
+
+R8BRAIN MIT LICENSE
+
+MIT License
+
+Copyright 2013-2023 Aleksey Vaneev
+
+Permission is hereby granted free of charge to any person obtaining a copy of this software and associated documentation files the Software to deal in the Software without restriction including without limitation the rights to use copy modify merge publish distribute sublicense and or sell copies of the Software and to permit persons to whom the Software is furnished to do so subject to the following conditions
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software
+
+THE SOFTWARE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND EXPRESS OR IMPLIED INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM DAMAGES OR OTHER LIABILITY WHETHER IN AN ACTION OF CONTRACT TORT OR OTHERWISE ARISING FROM OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+5. Disclaimer of Warranties
+No Warranty THE SOFTWARE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND EITHER EXPRESS OR IMPLIED INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY FITNESS FOR A PARTICULAR PURPOSE OR NON‑INFRINGEMENT. LIAM'S ELECTRONICS LAB DOES NOT WARRANT THAT THE SOFTWARE WILL MEET YOUR REQUIREMENTS OR THAT OPERATION WILL BE UNINTERRUPTED OR ERROR FREE.
+
+6. Limitation of Liability
+Exclusion of Damages IN NO EVENT SHALL LIAM'S ELECTRONICS LAB BE LIABLE FOR ANY SPECIAL INCIDENTAL INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER INCLUDING WITHOUT LIMITATION DAMAGES FOR LOSS OF BUSINESS PROFITS BUSINESS INTERRUPTION LOSS OF BUSINESS INFORMATION OR ANY OTHER PECUNIARY LOSS ARISING OUT OF THE USE OF OR INABILITY TO USE THE SOFTWARE EVEN IF LIAM'S ELECTRONICS LAB HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+Aggregate Cap EXCEPT FOR LIABILITY RESULTING FROM WILLFUL MISCONDUCT OR GROSS NEGLIGENCE LIAM'S ELECTRONICS LAB'S AGGREGATE LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO THIS EULA SHALL NOT EXCEED THE TOTAL AMOUNT PAID BY YOU FOR THE SOFTWARE IN THE TWELVE MONTHS PRECEDING THE CLAIM. IF NO AMOUNT WAS PAID THE AGGREGATE LIABILITY SHALL NOT EXCEED ONE HUNDRED DOLLARS USD.
+
+7. Termination
+This license is effective until terminated. Your rights under this EULA will terminate automatically without notice if you fail to comply with any term of this EULA. Upon termination you must destroy all copies of the SOFTWARE and certify destruction upon request. Termination does not limit any other remedies available to Liam's Electronics Lab.
+
+8. Updates Support and Maintenance
+Liam's Electronics Lab is not obligated to provide maintenance technical support or updates. Any updates provided may be subject to additional terms which will be provided with the update. Continued use of an update constitutes acceptance of any additional terms.
+
+9. Privacy and Telemetry
+Data Collection The SOFTWARE may collect diagnostic usage or telemetry data to improve product quality. Collection and use of such data are governed by our Privacy Policy available at the project repository or documentation. If the SOFTWARE collects personal data you are responsible for complying with applicable privacy laws when using the SOFTWARE.
+
+10. Export Compliance
+You agree to comply with all applicable export control laws and regulations and not to export or reexport the SOFTWARE to any country or person prohibited by law. You represent that you are not located in and will not use the SOFTWARE in a country subject to comprehensive trade sanctions or on any denied party list.
+
+11. Governing Law and Venue
+This EULA shall be governed by and construed in accordance with the laws of Japan without regard to conflict of law principles. The parties submit to the exclusive jurisdiction of the Tokyo District Court for any disputes arising out of or relating to this EULA.
+
+12. Miscellaneous
+Severability If any provision of this EULA is held invalid or unenforceable the remainder of the EULA will remain in full force and effect. Waiver Failure by Liam's Electronics Lab to enforce any right is not a waiver of that right. Assignment You may not assign or transfer this EULA or any rights hereunder without prior written consent from Liam's Electronics Lab. Liam's Electronics Lab may assign this EULA in connection with a merger acquisition or sale of assets. Entire Agreement This EULA constitutes the entire agreement between you and Liam's Electronics Lab concerning the SOFTWARE and supersedes all prior agreements and understandings.
+
+13. Acceptance Effective Date and Contact
+Acceptance By installing or using the SOFTWARE you acknowledge that you have read this EULA understand it and agree to be bound by its terms and conditions. Effective Date This EULA is effective upon installation or first use of the SOFTWARE. Last Updated November 30 2025.
