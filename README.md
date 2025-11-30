@@ -103,10 +103,10 @@ The **Web Gui** has the following features:
 **Main Page:**  
 
 
-- Master Volume + MUTE : You can set individual zone volumes 0~100%, adjusting the Master Volume will snap all outputs to that setting. MUTE will set the volume to 5% and lock the master volume slider..  
+- Master Volume + MUTE : Adjusting the Master Volume will snap all outputs to that setting. MUTE will set the volume to 5% and lock the master volume slider..  
 - Input Device Selection: This is the audio source device, if it has a custom name set, that is what you will see..  
 - Adjust Input Volume: This chnages the input volume for the source, same as the windows app works, because thats whats doing the real work. Really it should always be set to 100% (set "always adjust input volume" in advanced, to true)
-- Output Devices: These are your audio destinations, a.k.a your output zones. Each one is a distinct audio output device, you can select one or all at once. If a custom name is set, that is what you'll see.
+- Output Devices: You can set individual zone volumes 0~100%, These are your audio destinations, a.k.a your output zones. Each one is a distinct audio output device, you can select one or all at once. If a custom name is set, that is what you'll see.
 - Start routing, stop routing, refresh: Unlike the Windows GUI, you can add and remove output zones on the fly. Each time you do, routing is quickly stopped and restarted automagically .. Refresh resets the interface selectors and stops routing.
 
 ____
@@ -139,4 +139,4 @@ The **Web Gui admin page** has the following features:
 ____
 
 
-To use this software, you must first agree to the ELUA, included with the application..
+To use this software, you must first agree to the EULA, included with the application..
